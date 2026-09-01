@@ -287,10 +287,8 @@ int execute_assoc_client_stats_api(wifi_mon_collector_element_t *c_elem, wifi_mo
             dev_array[i].cli_ErrorsSent, dev_array[i].cli_RetransCount,
             dev_array[i].cli_FailedRetransCount, dev_array[i].cli_RetryCount,
             dev_array[i].cli_MultipleRetryCount, dev_array[i].cli_MaxDownlinkRate,
-            dev_array[i].cli_MaxUplinkRate, dev_array[i].cli_capableNumSpatialStreams,
-            dev_array[i].cli_activeNumSpatialStreams,
-            dev_array[i].cli_TxFrames, dev_array[i].cli_RxRetries, dev_array[i].cli_RxErrors,
-            dev_array[i].cli_PowerSaveMode, dev_array[i].cli_sleepTime);
+            dev_array[i].cli_MaxUplinkRate, dev_array[i].cli_activeNumSpatialStreams,
+            dev_array[i].cli_TxFrames, dev_array[i].cli_RxRetries, dev_array[i].cli_RxErrors);
 
         if (link_data && ((link_quality_measurement) || (rf_down_mesh_sta))) {
             memset(&link_data[i], 0, sizeof(linkquality_data_t));
